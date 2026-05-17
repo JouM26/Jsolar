@@ -51,5 +51,8 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: smspa-proforma-solar-apk
-          path: build/apk/app-release.apk
+          path: |
+            build/apk/**/*.apk
+            build/app/outputs/flutter-apk/**/*.apk
           retention-days: 30
+          if-no-files-found: error
