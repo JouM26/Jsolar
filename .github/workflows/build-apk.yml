@@ -26,12 +26,12 @@ jobs:
 
       - name: Instalar Flet y dependencias
         run: |
-          pip install flet>=0.27.0 fpdf2>=2.7.9
+          pip install flet==0.85.1 fpdf2>=2.7.9
 
       - name: Configurar Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: "3.27.1"
+          flutter-version: "3.41.7"
           channel: stable
           cache: true
 
